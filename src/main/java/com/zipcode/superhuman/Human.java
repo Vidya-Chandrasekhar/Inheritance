@@ -1,4 +1,4 @@
-package com.zipcode;
+package com.zipcode.superhuman;
 //Create a 'Human' class that has fields for: name, age, gender, occupation, and address.
 // Also create methods for retreiving and outputing this data to screen.
 //

@@ -1,4 +1,5 @@
-package com.zipcode;
+package com.zipcode.superhuman;
+
 // Then create a SuperHuman class that
 // subclasses the first with fields for good or bad, hero name, super ability. As before, create methods for
 // retrieving field data and printing to screen.

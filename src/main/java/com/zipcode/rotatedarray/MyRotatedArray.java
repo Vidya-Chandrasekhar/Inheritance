@@ -1,4 +1,4 @@
-package com.zipcode;
+package com.zipcode.rotatedarray;
 
 /**
  * Create a class that subclasses the built-in List class. Write a function that rotates a list by k elements.
