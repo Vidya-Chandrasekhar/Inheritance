@@ -19,7 +19,7 @@ public class SuperHuman extends Human {
 
     }
 
-    public String getCharacterType() {
+    public String getCharacterType( ) {
         return characterType;
     }
 
