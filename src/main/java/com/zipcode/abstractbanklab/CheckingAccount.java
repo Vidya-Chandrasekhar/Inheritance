@@ -7,6 +7,7 @@ package com.zipcode.abstractbanklab;
 public class CheckingAccount extends Account {
 
     public CheckingAccount(String accountID, Double accountBalance ){
+
         super(accountID,accountBalance);
     }
 
