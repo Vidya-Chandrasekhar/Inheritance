@@ -5,7 +5,7 @@ package com.zipcode.productmanagerlab;
  */
 public class DVDPlayer extends Product {
 
-    private final Object typeHdOrBluRay;
+
     private String typeHdOrBlueRay;
 
     public String getTypeHdOrBlueRay() {
@@ -16,9 +16,9 @@ public class DVDPlayer extends Product {
         this.typeHdOrBlueRay = typeHdOrBlueRay;
     }
 
-    public DVDPlayer(String name) {
+    public DVDPlayer(String name, Double price, String id, Integer countOnHand) {
         super(name, price, id, countOnHand);
-        this.typeHdOrBluRay  = typeHdOrBluRay;
+
 
     }
 }

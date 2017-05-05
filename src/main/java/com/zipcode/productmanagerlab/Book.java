@@ -3,7 +3,7 @@ package com.zipcode.productmanagerlab;
 /**
  * Created by vidyachandasekhar on 5/4/17.
  */
-public class Books extends Product {
+public class Book extends Product {
     private  String authorName;
     private  String publishingCompany;
 
@@ -23,13 +23,8 @@ public class Books extends Product {
         this.publishingCompany = publishingCompany;
     }
 
-    public Books(String name, String id) {
-
+    public Book(String name, Double price, String id, Integer countOnHand) {
         super(name, price, id, countOnHand);
-        this.authorName = authorName;
-        this.publishingCompany = publishingCompany;
     }
-
-
 
 }

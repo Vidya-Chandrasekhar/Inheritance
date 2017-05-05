@@ -5,18 +5,24 @@ package com.zipcode.abstractbanklab;
  */
 public class ATMClass {
 
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         ATMClass atm1 =new ATMClass();
+        Account checkingAccount1 = new CheckingAccount("ID_1", 101.00);
+
+        atm1.deposit(checkingAccount1, 50.00);
+        System.out.println(atm1.balanceEnquiry());
+
+
     }
 
-    public Double deposit(Account account, Double depositAmount) {
-        Double currentAccountBalance = account.getAccountBalance() + depositAmount;
+    public  double deposit(Account account, double depositAmount) {
+        double currentAccountBalance = account.getAccountBalance() + depositAmount;
         account.setAccountBalance(currentAccountBalance);
         return currentAccountBalance;
     }
 
-    public Double withdrawal(Account account, Double withdrawalAmount) {
-        Double currentAccountBalance = account.getAccountBalance() - withdrawalAmount;
+    public double withdrawal(Account account, double  withdrawalAmount) {
+        double currentAccountBalance = account.getAccountBalance() - withdrawalAmount;
         account.setAccountBalance(currentAccountBalance);
         return currentAccountBalance;
     }

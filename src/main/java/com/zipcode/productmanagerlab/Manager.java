@@ -18,25 +18,12 @@ public class Manager {
     private Double price;
     private Double countOnHand;
 
-
     public static void main(String[] args) {
-        DVDPlayer sony1= new DVDPlayer();
-        sony1.setName();
-        sony1.setId();
-        sony1.setPrice();
-        sony1.setCountOnHand();
-        System.out.println("====");
-        Books ipad1= new Books();
-        ipad1.setName();
-        ipad1.setId();
-        ipad1.setPrice();
-        ipad1.setCountOnHand();
-        System.out.println("====");
-        SonyTV tv1= new SonyTV();
-        tv1.setName();
-        tv1.setId();
-        tv1.setPrice();
-        tv1.setCountOnHand();
+
+        Book book1= new Book("Harry Porter", 70.00, "HP08",10 );
+        DVDPlayer player1= new DVDPlayer("player1",200.00,"D101",23);
+        Television sony1= new Television("Sony1",1900.00,"tvs123",16);
+
 
     }
 
