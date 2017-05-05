@@ -10,5 +10,5 @@ import static org.junit.Assert.assertEquals;
 public class ProductTest {
     @Test
     public void withdrawal() throws Exception {
-
+    }
 }

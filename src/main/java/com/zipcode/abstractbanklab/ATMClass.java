@@ -10,9 +10,7 @@ public class ATMClass {
         Account checkingAccount1 = new CheckingAccount("ID_1", 101.00);
 
         atm1.deposit(checkingAccount1, 50.00);
-        System.out.println(atm1.balanceEnquiry());
-
-
+        System.out.println(atm1.balanceEnquiry(checkingAccount1));
     }
 
     public  double deposit(Account account, double depositAmount) {

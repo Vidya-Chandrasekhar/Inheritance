@@ -24,7 +24,14 @@ public class Manager {
         DVDPlayer player1= new DVDPlayer("player1",200.00,"D101",23);
         Television sony1= new Television("Sony1",1900.00,"tvs123",16);
 
+        InventoryClass  inventoryClass=new InventoryClass();
 
+        inventoryClass.addItem(book1);
+        inventoryClass.addItem(player1);
+        inventoryClass.addItem(sony1);
+
+        String inventoryReport =  inventoryClass.getInventoryReport();
+        System.out.println(inventoryReport);
     }
 
 }
