@@ -53,7 +53,10 @@ public class PetMain {
     public String getAllPets(){
         StringBuilder stringBuilder = new StringBuilder();
         for(Pet pet: petStorage){
-            stringBuilder.append("Pet Type: :" + pet.getType() + "pet Name :"+ pet.getName() +"\n");
+            stringBuilder.append(" Pet_Type : " + pet.getType() + " Pet_Name : "+ pet.getName() +"\n");
+        }
+        if(stringBuilder.toString().length()==0){
+            return  "You don't have any pets !";
         }
         return stringBuilder.toString();
     }

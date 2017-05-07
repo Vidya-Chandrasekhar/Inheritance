@@ -5,6 +5,7 @@ package com.zipcode.polymorphism;
  */
 public abstract class Pet {
     private String name;
+    private String type;
 
     public String getType() {
         return type;
@@ -14,11 +15,10 @@ public abstract class Pet {
         this.type = type;
     }
 
-    private String type;
-
-    public Pet(String name){
+    public Pet(String name) {
         this.name = name;
     }
+
     public String getName() {
         return name;
     }
@@ -26,6 +26,7 @@ public abstract class Pet {
     public void setName(String name) {
         this.name = name;
     }
+
     public abstract String speak();
 
 

@@ -7,8 +7,10 @@ public class Cat extends Pet {
 
     public Cat(String name){
         super(name);
-        this.setName("Cat");
+        this.setName(name);
+        this.setType("Cat");
     }
+    @Override
     public String speak() {
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append("Meow\n");

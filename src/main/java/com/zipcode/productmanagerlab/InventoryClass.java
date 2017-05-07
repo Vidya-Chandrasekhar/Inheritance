@@ -8,11 +8,13 @@ import java.util.Map;
  */
 public class InventoryClass {
     // using map for efficient  access and retrieval using Product ID(key) product Instance(Value))
-    private Map<String, Product> itemStore = new HashMap<String, Product>();
+    //
+    private Map<String, Product> itemStore = new HashMap<String,Product>();
 
     public void addItem(Product product) {
         if (itemStore.containsKey(product.getId())) {
             Product existingProduct = itemStore.get(product.getId());
+
             int newCount = existingProduct.getCountOnHand() + product.getCountOnHand();
             existingProduct.setCountOnHand(newCount);
             itemStore.put(existingProduct.getId(), existingProduct);
